@@ -15,14 +15,14 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Metodo Greca — Costruisci la persona che meriti di diventare",
+  title: "STOICO — Costruisci la persona che meriti di diventare",
   description:
-    "Sessioni live settimanali, community privata e il Metodo Greca incluso. Un percorso per trasformare disciplina in risultati.",
-  metadataBase: new URL("https://example.com"), // TODO: replace with production domain
+    "L'ecosistema STOICO: Stoic Hall, Stoic Room, Metodo Greca e Coaching 1:1. Mentalità, allenamento e filosofia stoica guidati da Luigi Greca.",
+  metadataBase: new URL("https://example.com"), // TODO: sostituire con il dominio reale
   openGraph: {
-    title: "Metodo Greca — Costruisci la persona che meriti di diventare",
+    title: "STOICO — Costruisci la persona che meriti di diventare",
     description:
-      "Sessioni live settimanali, community privata e il Metodo Greca incluso.",
+      "L'ecosistema STOICO: Stoic Hall, Stoic Room, Metodo Greca e Coaching 1:1.",
     type: "website",
     locale: "it_IT",
   },

@@ -1,23 +1,25 @@
-import { About } from "@/components/About";
-import { Benefits } from "@/components/Benefits";
-import { FAQ } from "@/components/FAQ";
-import { FinalCTA } from "@/components/FinalCTA";
-import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
-import { Hero } from "@/components/Hero";
-import { Testimonials } from "@/components/Testimonials";
+import Navbar from "@/components/layout/Navbar";
+import Hero from "@/components/hero/Hero";
+import Ecosystem from "@/components/ecosystem/Ecosystem";
+import About from "@/components/about/About";
+import Presentation from "@/components/presentation/Presentation";
+import Partners from "@/components/partners/Partners";
+import FinalCTA from "@/components/cta/FinalCTA";
+import Footer from "@/components/footer/Footer";
 
-export default function Home() {
+export default function StoicRoomPage() {
   return (
-    <main className="min-h-screen bg-black">
-      <Header />
-      <Hero />
-      <Benefits />
-      <Testimonials />
-      <About />
-      <FAQ />
-      <FinalCTA />
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <Presentation />
+        <Ecosystem />
+        <About />
+        <FinalCTA />
+        <Partners />
+      </main>
       <Footer />
-    </main>
+    </>
   );
 }
