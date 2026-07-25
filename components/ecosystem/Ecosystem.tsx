@@ -1,6 +1,7 @@
 import Container from "@/components/common/Container";
 import Heading from "@/components/common/Heading";
 import Reveal from "@/components/common/Reveal";
+import { GoldButton } from "@/components/ui/GoldButton";
 import MarcusAureliusBanner from "./MarcusAureliusBanner";
 import { ecosystemItems } from "./data";
 
@@ -35,6 +36,12 @@ export default function Ecosystem() {
                       {line}
                     </p>
                   ))}
+                </div>
+
+                <div className="mt-auto pt-4">
+                  <GoldButton href={item.href} variant="primary" size="md" className="w-full">
+                    {item.ctaLabel}
+                  </GoldButton>
                 </div>
               </div>
             </Reveal>

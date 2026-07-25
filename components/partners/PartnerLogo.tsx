@@ -21,13 +21,14 @@ export default function PartnerLogo({
   }
 
   return (
-    <div className="relative h-6 w-32 sm:h-7 sm:w-36">
+    <div className="relative h-16 w-16 sm:h-20 sm:w-20">
       <Image
         src={src}
         alt={name}
         fill
-        sizes="150px"
-        className="object-contain object-center brightness-0 invert opacity-70"
+        sizes="80px"
+        className="object-contain object-center"
+        style={{ filter: "grayscale(1) sepia(0.75) saturate(4) brightness(0.95) hue-rotate(-8deg)" }}
         onError={() => setFailed(true)}
       />
     </div>
