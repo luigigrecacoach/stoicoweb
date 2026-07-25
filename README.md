@@ -64,3 +64,4 @@ types/
 - Animazioni con Framer Motion, basate su `whileInView` per attivarsi solo quando le sezioni entrano nel viewport (basso impatto sulle performance).
 - Palette colori (`tailwind.config.ts`): nero (`bg-black`) + oro (`gold`, `gold-light`, `gold-dark`).
 - Nessuna dipendenza pesante oltre a `framer-motion` e `lucide-react`.
+# stoicoweb
