@@ -1,10 +1,11 @@
- "use client";
-
+"use client";
 import Image from "next/image";
 import { useState } from "react";
 
 export default function PortraitImage() {
-  const [failed, setFailed] = useState(false);
+  const [failedPrima, setFailedPrima] = useState(false);
+  const [failedDopo, setFailedDopo] = useState(false);
+  const failed = failedPrima && failedDopo;
 
   return (
     <div
@@ -13,14 +14,48 @@ export default function PortraitImage() {
       }`}
     >
       {!failed ? (
-        <Image
-          src="/images/luigi-cutout.png"
-          alt="Statua di guerriero romano"
-          fill
-          sizes="(min-width: 768px) 50vw, 100vw"
-          className="object-cover"
-          onError={() => setFailed(true)}
-        />
+        <div className="flex h-full w-full flex-col">
+          {/* PRIMA */}
+          <div className="relative w-full flex-1 overflow-hidden">
+            {!failedPrima ? (
+              <Image
+                src="/images/luigi-prima.jpg"
+                alt="Luigi Greca, prima — momento di difficoltà"
+                fill
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className="object-cover object-top"
+                onError={() => setFailedPrima(true)}
+              />
+            ) : (
+              <div className="h-full w-full bg-black" />
+            )}
+            <span className="absolute left-3 top-3 text-[10px] font-medium uppercase tracking-[0.25em] text-white/70">
+              Prima
+            </span>
+          </div>
+
+          {/* Divisore dorato */}
+          <div className="h-px w-full bg-[#9c7a52]/40" />
+
+          {/* DOPO */}
+          <div className="relative w-full flex-1 overflow-hidden">
+            {!failedDopo ? (
+              <Image
+                src="/images/luigi-dopo.jpg"
+                alt="Luigi Greca, dopo — il percorso stoico"
+                fill
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className="object-cover object-top"
+                onError={() => setFailedDopo(true)}
+              />
+            ) : (
+              <div className="h-full w-full bg-black" />
+            )}
+            <span className="absolute left-3 top-3 text-[10px] font-medium uppercase tracking-[0.25em] text-[#9c7a52]">
+              Dopo
+            </span>
+          </div>
+        </div>
       ) : (
         <div className="flex h-full w-full items-center justify-center">
           <Image
