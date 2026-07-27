@@ -37,7 +37,7 @@ export default function Footer() {
 
           <div className="flex items-center gap-4">
             {SOCIAL_LINKS.map((link) => (
-              
+              <a
                 key={link.label}
                 href={link.href}
                 target="_blank"
@@ -49,7 +49,7 @@ export default function Footer() {
               </a>
             ))}
 
-            
+            <a
               href={getWhatsappUrl()}
               target="_blank"
               rel="noopener noreferrer"
