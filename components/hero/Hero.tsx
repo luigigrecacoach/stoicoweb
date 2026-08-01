@@ -4,9 +4,6 @@ import { useRef, useState } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Container from "@/components/common/Container";
-import Button from "@/components/common/Button";
-import WhatsAppIcon from "@/components/common/WhatsAppIcon";
-import { getWhatsappUrl } from "@/lib/whatsapp";
 
 const HERO_PORTRAIT_SRC = "/images/hero-luigi.webp";
 const EASE = [0.16, 1, 0.3, 1] as const;
@@ -102,20 +99,6 @@ export default function Hero() {
             ))}
           </motion.ul>
 
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.45, ease: EASE }}
-          >
-            <Button
-              href={getWhatsappUrl()}
-              variant="outline"
-              size="lg"
-              icon={<WhatsAppIcon />}
-            >
-              Parla con Luigi
-            </Button>
-          </motion.div>
         </div>
       </Container>
     </section>

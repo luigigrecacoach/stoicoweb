@@ -1,6 +1,6 @@
 import Container from "@/components/common/Container";
 import Reveal from "@/components/common/Reveal";
-import PortraitImage from "./PortraitImage";
+import BeforeAfter from "./BeforeAfter";
 
 const STORY = [
   "Credevo che la disciplina potesse trasformare una persona. Poi la vita ha deciso di mettere alla prova questa convinzione. Nel 2020, dopo un incidente serio, sono stato costretto a ricostruire non solo il corpo, ma anche la mente.",
@@ -13,7 +13,7 @@ export default function About() {
     <section id="birth" className="relative bg-black py-32 md:py-40">
       <Container className="grid items-center gap-14 md:grid-cols-2 md:gap-20">
         <Reveal>
-          <PortraitImage />
+          <BeforeAfter />
         </Reveal>
 
         <div className="flex flex-col gap-10">

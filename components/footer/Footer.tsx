@@ -1,9 +1,7 @@
 import type { ReactNode } from "react";
 import { Instagram, Youtube } from "lucide-react";
 import Container from "@/components/common/Container";
-import WhatsAppIcon from "@/components/common/WhatsAppIcon";
 import Logo from "@/components/layout/Logo";
-import { getWhatsappUrl } from "@/lib/whatsapp";
 
 const SOCIAL_LINKS: { label: string; href: string; icon: ReactNode }[] = [
   {
@@ -48,16 +46,6 @@ export default function Footer() {
                 {link.icon}
               </a>
             ))}
-
-            <a
-              href={getWhatsappUrl()}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="WhatsApp"
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-amber-400/40 text-amber-400 transition hover:border-amber-400 hover:bg-amber-400 hover:text-black"
-            >
-              <WhatsAppIcon className="h-4 w-4" />
-            </a>
           </div>
 
           <p className="text-xs text-white/50">

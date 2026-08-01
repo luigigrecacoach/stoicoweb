@@ -4,13 +4,10 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Container from "@/components/common/Container";
-import Button from "@/components/common/Button";
-import WhatsAppIcon from "@/components/common/WhatsAppIcon";
 import Logo from "./Logo";
-import { getWhatsappUrl } from "@/lib/whatsapp";
 
 const NAV_LINKS = [
-  { label: "Ecosistema", href: "#ecosystem" },
+  { label: "Ecosistema", href: "#calendly" },
   { label: "Le origini", href: "#birth" },
   { label: "Presentazione", href: "#presentation" },
 ];
@@ -45,15 +42,6 @@ export default function Navbar() {
         <Logo />
 
         <div className="flex items-center gap-4">
-          <Button
-            href={getWhatsappUrl()}
-            size="md"
-            icon={<WhatsAppIcon />}
-            className="hidden sm:inline-flex"
-          >
-            Parla con Luigi
-          </Button>
-
           <button
             type="button"
             onClick={() => setOpen(true)}
@@ -104,25 +92,6 @@ export default function Navbar() {
                   {link.label}
                 </motion.a>
               ))}
-              <motion.div
-                initial={{ opacity: 0, y: 16 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{
-                  delay: 0.1 + NAV_LINKS.length * 0.06,
-                  duration: 0.5,
-                  ease: [0.16, 1, 0.3, 1],
-                }}
-                className="pt-6"
-              >
-                <Button
-                  href={getWhatsappUrl()}
-                  size="lg"
-                  icon={<WhatsAppIcon />}
-                  onClick={() => setOpen(false)}
-                >
-                  Parla con Luigi
-                </Button>
-              </motion.div>
             </nav>
           </motion.div>
         )}

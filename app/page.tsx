@@ -1,10 +1,10 @@
 import Navbar from "@/components/layout/Navbar";
 import Hero from "@/components/hero/Hero";
-import Ecosystem from "@/components/ecosystem/Ecosystem";
-import About from "@/components/about/About";
 import Presentation from "@/components/presentation/Presentation";
+import About from "@/components/about/About";
+import MarcusAurelius from "@/components/marcus-aurelius/MarcusAurelius";
+import Calendly from "@/components/calendly/Calendly";
 import Partners from "@/components/partners/Partners";
-import FinalCTA from "@/components/cta/FinalCTA";
 import Footer from "@/components/footer/Footer";
 
 export default function StoicRoomPage() {
@@ -14,9 +14,9 @@ export default function StoicRoomPage() {
       <main>
         <Hero />
         <Presentation />
-        <Ecosystem />
         <About />
-        <FinalCTA />
+        <MarcusAurelius />
+        <Calendly />
         <Partners />
       </main>
       <Footer />
