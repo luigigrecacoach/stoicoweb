@@ -6,7 +6,7 @@ import Heading from "@/components/common/Heading";
 import Reveal from "@/components/common/Reveal";
 
 const CALENDLY_URL =
-  "https://calendly.com/luigigrecacoach-info/candidatura-ecosistema-stoico?background_color=000000&text_color=ffffff&primary_color=d4af37";
+  "https://calendly.com/luigigrecacoach-info/candidatura-ecosistema-stoico?background_color=000000&text_color=ffffff&primary_color=d4af37&locale=it";
 
 export default function Calendly() {
   return (
