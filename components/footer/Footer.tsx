@@ -33,6 +33,15 @@ export default function Footer() {
         <div className="flex flex-col items-center gap-6 text-center">
           <Logo />
 
+          <a
+            href="https://metodogreca.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full border border-amber-400/40 px-4 py-1.5 text-xs font-medium uppercase tracking-wide text-amber-400 transition hover:border-amber-400 hover:bg-amber-400 hover:text-black"
+          >
+            Metodo Greca Shop
+          </a>
+
           <div className="flex items-center gap-4">
             {SOCIAL_LINKS.map((link) => (
               <a
