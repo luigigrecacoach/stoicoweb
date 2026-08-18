@@ -5,6 +5,7 @@ import About from "@/components/about/About";
 import MarcusAurelius from "@/components/marcus-aurelius/MarcusAurelius";
 import Calendly from "@/components/calendly/Calendly";
 import ShopPreview from "@/components/shop/ShopPreview";
+import StoicHall from "@/components/stoic-hall/StoicHall";
 import Partners from "@/components/partners/Partners";
 import Footer from "@/components/footer/Footer";
 
@@ -19,6 +20,7 @@ export default function StoicRoomPage() {
         <MarcusAurelius />
         <Calendly />
         <ShopPreview />
+        <StoicHall />
         <Partners />
       </main>
       <Footer />
