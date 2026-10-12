@@ -3,6 +3,7 @@ import Hero from "@/components/hero/Hero";
 import Presentation from "@/components/presentation/Presentation";
 import About from "@/components/about/About";
 import MarcusAurelius from "@/components/marcus-aurelius/MarcusAurelius";
+import StoicRoom from "@/components/stoic-room/StoicRoom";
 import Calendly from "@/components/calendly/Calendly";
 import ShopPreview from "@/components/shop/ShopPreview";
 import StoicHall from "@/components/stoic-hall/StoicHall";
@@ -18,6 +19,7 @@ export default function StoicRoomPage() {
         <Presentation />
         <About />
         <MarcusAurelius />
+        <StoicRoom />
         <Calendly />
         <ShopPreview />
         <StoicHall />

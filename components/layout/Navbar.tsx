@@ -7,9 +7,11 @@ import Container from "@/components/common/Container";
 import Logo from "./Logo";
 
 const NAV_LINKS = [
-  { label: "Ecosistema", href: "#calendly" },
-  { label: "Le origini", href: "#birth" },
   { label: "Presentazione", href: "#presentation" },
+  { label: "Le origini", href: "#birth" },
+  { label: "Stoic Room", href: "#stoic-room" },
+  { label: "Coaching 1:1", href: "#calendly" },
+  { label: "Metodo Greca", href: "#shop" },
 ];
 
 export default function Navbar() {
