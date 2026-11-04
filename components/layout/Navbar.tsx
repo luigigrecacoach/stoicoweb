@@ -7,12 +7,12 @@ import Container from "@/components/common/Container";
 import Logo from "./Logo";
 
 const NAV_LINKS = [
-  { label: "Presentazione", href: "#presentation" },
   { label: "Le origini", href: "#birth" },
-  { label: "Stoic Room", href: "#stoic-room" },
   { label: "Coaching 1:1", href: "#coaching" },
-  { label: "Metodo Greca", href: "#shop" },
-];
+  { label: "Stoic Room", href: "#stoic-room" },
+  { label: "Corsi", href: "#shop" },
+  { label: "Prenota la call", href: "#calendly" },
+]
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);

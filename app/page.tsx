@@ -20,12 +20,12 @@ export default function StoicRoomPage() {
         <Hero />
         <Presentation />
         <QuickNav />
-        <Coaching />
         <About />
         <MarcusAurelius />
+        <Coaching />
         <StoicRoom />
-        <Calendly />
         <ShopPreview />
+        <Calendly />
         <StoicHall />
         <Partners />
       </main>

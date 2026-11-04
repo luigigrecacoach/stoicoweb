@@ -10,7 +10,7 @@ const CALENDLY_URL =
 
 export default function Calendly() {
   return (
-    <section id="calendly" className="relative bg-black py-32 md:py-40">
+    <section id="calendly" className="relative scroll-mt-16 bg-black py-32 md:py-40">
       <Container className="flex flex-col items-center gap-14">
         <Heading
           eyebrow="Candidatura"

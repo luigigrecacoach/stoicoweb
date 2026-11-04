@@ -10,7 +10,7 @@ const STORY = [
 
 export default function About() {
   return (
-    <section id="birth" className="relative bg-black py-32 md:py-40">
+    <section id="birth" className="relative scroll-mt-16 bg-black py-32 md:py-40">
       <Container className="grid items-center gap-14 md:grid-cols-2 md:gap-20">
         <Reveal>
           <BeforeAfter />
