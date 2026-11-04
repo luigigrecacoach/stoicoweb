@@ -1,6 +1,8 @@
 import Navbar from "@/components/layout/Navbar";
 import Hero from "@/components/hero/Hero";
 import Presentation from "@/components/presentation/Presentation";
+import QuickNav from "@/components/quick-nav/QuickNav";
+import Coaching from "@/components/coaching/Coaching";
 import About from "@/components/about/About";
 import MarcusAurelius from "@/components/marcus-aurelius/MarcusAurelius";
 import StoicRoom from "@/components/stoic-room/StoicRoom";
@@ -17,6 +19,8 @@ export default function StoicRoomPage() {
       <main>
         <Hero />
         <Presentation />
+        <QuickNav />
+        <Coaching />
         <About />
         <MarcusAurelius />
         <StoicRoom />

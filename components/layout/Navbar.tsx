@@ -10,7 +10,7 @@ const NAV_LINKS = [
   { label: "Presentazione", href: "#presentation" },
   { label: "Le origini", href: "#birth" },
   { label: "Stoic Room", href: "#stoic-room" },
-  { label: "Coaching 1:1", href: "#calendly" },
+  { label: "Coaching 1:1", href: "#coaching" },
   { label: "Metodo Greca", href: "#shop" },
 ];
 

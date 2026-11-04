@@ -21,7 +21,7 @@ const PRODUCTS = [
 
 export default function ShopPreview() {
   return (
-    <section id="shop" className="relative bg-black py-32 md:py-40">
+    <section id="shop" className="relative scroll-mt-16 bg-black py-32 md:py-40">
       <Container className="flex flex-col items-center gap-14">
         <Heading
           eyebrow="Metodo Greca Shop"
@@ -42,7 +42,7 @@ export default function ShopPreview() {
           </div>
         </Reveal>
 
-        <div className="grid w-full max-w-4xl gap-8 sm:grid-cols-2">
+        <div id="corsi" className="grid w-full max-w-4xl scroll-mt-28 gap-8 sm:grid-cols-2">
           {PRODUCTS.map((product, i) => (
             <Reveal key={product.name} delay={0.15 + i * 0.08}>
               <div className="flex h-full flex-col overflow-hidden rounded-[1.75rem] border border-bronze/30 bg-white/[0.02] shadow-bronze-glow">

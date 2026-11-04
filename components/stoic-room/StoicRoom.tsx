@@ -30,7 +30,7 @@ export default function StoicRoom() {
   return (
     <section
       id="stoic-room"
-      className="relative overflow-hidden bg-black py-24 md:py-32"
+      className="relative scroll-mt-16 overflow-hidden bg-black py-24 md:py-32"
     >
       {/* Statua: in alto su mobile, a destra su desktop */}
       <div className="relative mx-auto mb-12 aspect-[772/941] w-full max-w-sm lg:absolute lg:inset-y-0 lg:right-0 lg:mb-0 lg:aspect-auto lg:w-[46%] lg:max-w-none">
